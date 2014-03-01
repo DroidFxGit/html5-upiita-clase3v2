@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Javascript</title>
+		<script>
+			/*
+			var nombreUsuario = prompt("¿Como te llamas?");
+			document.write(nombreUsuario); */
+			
+			//delarar una función
+			function escribir(texto) {
+				
+				document.write(texto);
+			}
+			
+			//ejecuta la función
+			escribir("funcion!!!!");
+			
+			
+			//funciones anonimas
+			var funcion_sumar;
+			var funcion_multiplicar;
+			var resultado = 0;
+			funcion_sumar = function (a, b) {
+				resultado = a + b;
+				document.write("Suma: " + resultado);
+			};
+			
+			funcion_multiplicar = function (a, b) {
+				resultado = a * b;
+				document.write("Multiplicación: " + resultado);
+			};
+			
+			funcion_dividir = function (a, b) {
+				resultado = a / b;
+				document.write("División: " + resultado);
+			};
+			
+			
+			funcion_sumar(2, 3);
+			funcion_multiplicar(2, 3);
+			funcion_dividir(2, 3);
+			
+			
+			/*una funcion que recibe como parametro otra funcion*/
+			var operacion;
+			operacion = function(una_funcion) {
+				una_funcion(3, 3);
+				
+			};
+			
+			
+			operacion(funcion_sumar);
+			
+			
+		</script>
+	</head>
+	
+	<body>
+		<p>Aprendiendo JavaScript</p>
+		
+	</body>
+</html>
+

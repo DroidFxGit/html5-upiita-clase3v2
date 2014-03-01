@@ -5,6 +5,22 @@
         <title>Texto a numero</title>
         <script>
          /*Aquí todo el código en javaScript*/
+        
+        var nombre_p = prompt("Nombre?");
+        var apellido_p = prompt("Apellido?");
+        var edad_p = prompt("Edad?");
+        
+        
+        var usuario = {};
+        usuario.nombre = nombre_p;
+        usuario.apellido = apellido_p;
+        usuario.edad = edad_p;
+        var anuncio = function (a, b, c){
+        	alert("Nombre: " + a + " " + b + "\nEdad: " + c);
+        };
+        
+        anuncio(usuario.nombre, usuario.apellido, usuario.edad);
+        
 
         </script>
     </head>
